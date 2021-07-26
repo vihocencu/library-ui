@@ -1,4 +1,35 @@
 
 <ul class="list-group col-4">
-    <li class="list-group-item" *ngFor="let book of books">{{book.title}}</li>
+    <li class="list-group-item" *ngFor="let book of books">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-4by 3">
+          <img src="placeholder"> 
+        </figure>
+      </div>
+      <div class="card-content">
+      <p class="title is-4"> {{book.title}}</p>
+    </div>
+    </div>
+    <section class="hero">
+      <div class="hero-body">
+        <p class="title">
+          Hero title
+        </p>
+        <p class="subtitle">
+          Hero subtitle
+        </p>
+      </div>
+    </section>
+    </li>
   </ul>
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <p class="title">
+        Primary hero
+      </p>
+      <p class="subtitle">
+        Primary subtitle
+      </p>
+    </div>
+  </section>
