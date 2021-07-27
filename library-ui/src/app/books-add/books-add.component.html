@@ -1,0 +1,48 @@
+<br>
+
+<section class="hero is-primary is-fullheight">
+    <div class="hero-body">
+        <div class="container">
+            <div class="title is-4">
+                <p class="title">Add Book</p>
+            </div>
+            <form class="box">
+                <div class="field is-horizontal">
+                    <div class="control has-icons-left has-icons-right">
+                        <label>Name: </label>
+                    </div>
+                    <input class="input is-small" type="text" (change)='name=$event.currentTarget.value'>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="control has-icons-left has-icons-right">
+                        <label>Author: </label>
+                    </div>
+                    <input class="input is-small" type="text" (change)='author=$event.currentTarget.value'>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="control has-icons-left has-icons-right">
+                        <label>Description: </label>
+                    </div>
+                    <input class="input is-small" type="text" (change)='description=$event.currentTarget.value'>
+                </div>
+                <div class="file has-name">
+                    <label class="file-label">
+                        <input class="file-input" type="file" name="resume" (change)="handleUpload($event)">
+                        <span class="file-cta">
+                            <span class="file-icon">
+                                <i class="fas fa-upload" ></i>
+                            </span>
+                            <span class="file-label">
+                                Choose a file…
+                            </span>
+                        </span>
+                        <span class="file-name">
+                            {{file}}
+                        </span>
+                    </label>
+                </div>
+                <button class="button" (click)="save()">Save</button>
+            </form>
+        </div>
+    </div>
+</section>

@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { BooksListComponent } from './books-list/books-list.component';
+import { BooksAddComponent } from './books-add/books-add.component';
 
 const routes:Routes = [
-  {path: 'books', component:BooksListComponent}
+  {path: 'booksSearch', component:BooksListComponent},
+   {path: 'booksAdd', component:BooksAddComponent}
 ];
 
 @NgModule({

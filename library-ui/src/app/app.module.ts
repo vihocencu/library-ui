@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { BooksListComponent } from './books-list/books-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BookService } from './books-list/book-service';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { BooksAddComponent } from './books-add/books-add.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BooksListComponent
+    BooksListComponent,
+    NavBarComponent,
+    BooksAddComponent
   ],
   imports: [
     BrowserModule,

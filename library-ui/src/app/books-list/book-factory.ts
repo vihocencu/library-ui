@@ -5,7 +5,8 @@ export class BookFactory {
         return new Book(
             rawObject.title,
             rawObject.author,
-            rawObject.description
+            rawObject.description,
+            rawObject.picture
         );
     }
 }
